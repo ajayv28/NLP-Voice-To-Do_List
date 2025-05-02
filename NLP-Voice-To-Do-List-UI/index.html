@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice To-Do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <h1>&#127908; Voice To-Do List</h1>
+                <p>Organize your tasks using voice commands</p>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </header> 
+    <main>
+        <div id="body-container">
+            <section class="todo-container">
+                <h2>Add a Task</h2>
+                <button class="voice-btn">🎤 - Click here to Add Task by Voice</button>
+                <br><br>
+                <div id="todo-list"></div>
+            </section>
+            <section class="task-details" id="task-detail-id">
+                <h2> Task Details</h2>
+                <div id="task-output">
+                    <div class="task-info">
+                        <p><strong>Task : </strong><span id="task"></span></p>
+                        <p><strong>Urgency : </strong><span id="urgency"></spanx</p>
+                        <p><strong>Date/Time : </strong><span id="datetime"></span></p>
+                    </div>
+                    <div id="confirmation-area"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>2025 | NLP Voice To-Do List | Developed by Ajay Venkatesh Babu</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

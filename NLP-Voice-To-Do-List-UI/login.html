@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Voice To-Do List</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="logo-container">
+            <i class="fas fa-tasks"></i>
+            <h2 id="auth-title">Welcome Back</h2>
+        </div>
+        <p class="subtitle" id="auth-subtitle">Please login to your account</p>
+        
+        <form id="auth-form" class="auth-form">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <i class="fas fa-eye-slash toggle-password"></i>
+                </div>
+            </div>
+            
+            <button type="submit" id="auth-button">
+                <span>Login</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </form>
+
+        <div class="social-login">
+            <p>Or continue with</p>
+            <div class="social-buttons">
+                <div class="social-button" title="Login with Google">
+                    <i class="fab fa-google"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle-auth">
+            <a href="" id="toggle-auth-link">
+                <span>Don't have an account?</span>
+                <span class="highlight">Sign up</span>
+            </a>
+        </div>
+        
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <div id="loading-overlay" style="display: none">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.5.25/jsrsasign-all-min.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="social-auth.js"></script>
+</body>
+</html> 
