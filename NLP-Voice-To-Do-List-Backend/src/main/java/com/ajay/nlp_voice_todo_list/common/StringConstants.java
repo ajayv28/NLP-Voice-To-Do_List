@@ -15,6 +15,8 @@ public class StringConstants {
             "MQIDAQAB\n" +
             "-----END PUBLIC KEY-----";
 
+    public static final String openAiToken = "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";
+
     public static final HashSet<String> stopWordsList = new HashSet<>(Arrays.asList("for", "an"));
 
     public static final HashSet<String> protectedTermsList = new HashSet<>();
