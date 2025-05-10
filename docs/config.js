@@ -1,4 +1,4 @@
-export const GITHUB_TOKEN =  "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";
+export const GITHUB_TOKEN =  "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";
 export const backendURL = "https://nlp-voice-to-do.onrender.com";
 export const privateKey = `------BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9yWNwNbBPIeHC

@@ -17,7 +17,7 @@ export async function main(command) {
   }
 
   const client = new OpenAI({
-    baseURL: "https://models.inference.ai.azure.com",
+    baseURL: "https://models.github.ai/inference",
     apiKey: GITHUB_TOKEN,
     dangerouslyAllowBrowser: true 
   });
@@ -48,7 +48,7 @@ export async function main(command) {
           content: command
         }
       ],
-      model: "gpt-4o",
+      model: "openai/gpt-4.1",
       temperature: 1,
       max_tokens: 4096,
       top_p: 1
