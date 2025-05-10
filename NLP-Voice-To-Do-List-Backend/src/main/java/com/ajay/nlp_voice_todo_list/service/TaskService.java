@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -33,7 +34,21 @@ public class TaskService {
 
 
     public List<Task> getTask(Long userId) {
-        return taskRepository.findByUserId(userId);
+        List<Task> tasks =  taskRepository.findByUserId(userId);
+
+        Map<String, Integer> urgencyPriority = Map.of(
+                "High", 3,
+                "Medium", 2,
+                "Low", 1
+        );
+
+        tasks.sort((a, b) -> {
+            int priorityA = urgencyPriority.getOrDefault(a.getUrgency(), 0);
+            int priorityB = urgencyPriority.getOrDefault(b.getUrgency(), 0);
+            return Integer.compare(priorityB, priorityA);
+        });
+
+        return tasks;
     }
 
 
