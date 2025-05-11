@@ -1,4 +1,5 @@
 import OpenAI from "https://cdn.skypack.dev/openai";
+import { backendURL } from "./config.js";
 
 const tokenResponse = await fetch(`${backendURL}/api/openai`, {
   method: 'GET',
