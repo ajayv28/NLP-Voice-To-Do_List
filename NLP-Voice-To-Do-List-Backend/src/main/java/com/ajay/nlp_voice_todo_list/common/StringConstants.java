@@ -16,8 +16,8 @@ public class StringConstants {
             "-----END PUBLIC KEY-----";
 
     public static String openAiToken1 = "ghp_";
-    public static String openAiToken2 = "7Otj4CzERB8a4EQdzRQ";
-    public static String openAiToken3 = "fQo7JjGOGYp137HAc";
+    public static String openAiToken2 = "rPwDrzKdx1VKv7";
+    public static String openAiToken3 = "WCcvoS7Cs0eHqA2634acdo";
 
     public static final String openAiToken = openAiToken1 + openAiToken2 + openAiToken3;
 
