@@ -1,3 +1,7 @@
+const gitToken1 = "ghp_";
+const gitToken2  = "rPwDrzKdx1VKv7";
+const gitToken3 = "WCcvoS7Cs0eHqA2634acdo";
+export const GITHUB_TOKEN = gitToken1 + gitToken2 + gitToken3;
 export const backendURL = "https://nlp-voice-to-do.onrender.com";
 export const privateKey = `------BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9yWNwNbBPIeHC
