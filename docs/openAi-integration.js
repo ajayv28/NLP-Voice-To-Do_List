@@ -1,21 +1,5 @@
 import OpenAI from "https://cdn.skypack.dev/openai";
-import { backendURL, GITHUB_TOKEN } from "./config.js";
-
-// const tokenResponse = await fetch(`${backendURL}/api/openai`, {
-//   method: 'GET',
-//   headers: {
-//     "Content-Type": "application/json",
-//     "Accept": "application/json"
-//   }
-// });
-
-// if (!tokenResponse.ok) {
-//     throw new Error(`HTTP error during getting Open AI Auth Token from backend ! status: ${response.status}`);
-//     }
-
-// const GITHUB_TOKEN = await tokenResponse.json();
-
-
+import { GITHUB_TOKEN } from "./config.js";
 
 function getTodayDate() {
   const today = new Date();
