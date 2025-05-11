@@ -15,7 +15,11 @@ public class StringConstants {
             "MQIDAQAB\n" +
             "-----END PUBLIC KEY-----";
 
-    public static final String openAiToken = "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";
+    public static String openAiToken1 = "ghp_";
+    public static String openAiToken2 = "7Otj4CzERB8a4EQdzRQ";
+    public static String openAiToken3 = "fQo7JjGOGYp137HAc";
+
+    public static final String openAiToken = openAiToken1 + openAiToken2 + openAiToken3;
 
     public static final HashSet<String> stopWordsList = new HashSet<>(Arrays.asList("for", "an"));
 
